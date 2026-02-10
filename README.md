@@ -27,3 +27,17 @@ home services and enables admin to manage bookings.
 pip install flask
 python create_db.py
 python app.py
+## 📸 Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Book Service
+![Book Service](screenshots/book.png)
+
+### My Bookings
+![My Bookings](screenshots/my_bookings.png)
+
+### Admin Panel
+![Admin Panel](screenshots/admin.png)
+
