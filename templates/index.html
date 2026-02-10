@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Available Home Services</h1>
+
+    <ul>
+        {% for service in services %}
+            <li>
+                {{ service[1] }} - ₹{{ service[2] }}
+                <a href="/book/{{ service[1] }}">Book</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <br>
+    <a href="/bookings">My Bookings</a>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Service</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h2>Book {{ service_name }}</h2>
+
+    <form action="/submit_booking" method="post">
+        <input type="hidden" name="service" value="{{ service_name }}">
+
+        <label>Your Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Date:</label><br>
+        <input type="date" name="date" required><br><br>
+
+        <button type="submit">Confirm Booking</button>
+    </form>
+
+    <br>
+    <a href="/">Back</a>
+</body>
+</html>
